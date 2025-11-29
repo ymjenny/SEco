@@ -54,7 +54,7 @@ model, hall_list, genre_list = train_model()
 # ==== 입력 UI ====
 hall = st.selectbox("공연장", hall_list)
 genre = st.selectbox("장르", genre_list)
-audience = st.slider("관람인원", 1000, 90000, 20000, step=500)
+audience = st.slider("관람인원", 100, 100000, 100, step=100)
 month = st.selectbox("월", list(range(1, 13)))
 
 if st.button("예측하기"):
